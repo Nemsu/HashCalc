@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("HashCalc")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Kiểm tra toàn vẹn tập tin")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("nemsu.tech@gmail.com")]
 [assembly: AssemblyProduct("HashCalc")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]

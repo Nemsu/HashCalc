@@ -73,18 +73,27 @@ namespace HashCalc
             else if (cbbHash.Text == "SHA1")
             {
                 txtHash.AppendText(KiemTraSHA1(txtFile.Text));
+                progressBar1.Increment(100);
             }
             else if (cbbHash.Text == "SHA256")
             {
                 txtHash.AppendText(KiemTraSHA256(txtFile.Text));
+                progressBar1.Increment(100);
             }
 
         }
 
         private void btnSaoChep_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Sao chép thành công!");
-            Clipboard.SetText(txtHash.Text);
+            if (txtHash.Text == "")
+            {
+                MessageBox.Show("Không có gì để sao chép!");
+            }
+            else
+            {
+                MessageBox.Show("Sao chép thành công!");
+                Clipboard.SetText(txtHash.Text);
+            }
         }
     }
 }
